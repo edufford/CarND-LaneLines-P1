@@ -14,20 +14,14 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image_t1s0]: ./test_images_output/solidWhiteCurve_s0.jpg "solidWhiteCurve: original"
-[image_t1s1]: ./test_images_output/solidWhiteCurve_s1.jpg "solidWhiteCurve: gray + enhanced yellow/white lanes"
-[image_t1s2]: ./test_images_output/solidWhiteCurve_s2.jpg "solidWhiteCurve: Canny edges"
-[image_t1s3]: ./test_images_output/solidWhiteCurve_s3.jpg "solidWhiteCurve: raw left/right Hough lines"
-[image_t1s4]: ./test_images_output/solidWhiteCurve_s4.jpg "solidWhiteCurve: overlaid final detected lanes"
+[image_t5s0]: ./writeup_screenshots/solidYellowLeft_s0.jpg "solidYellowLeft: original"
+[image_t5s1]: ./writeup_screenshots/solidYellowLeft_s1.jpg "solidYellowLeft: gray + enhanced yellow/white lanes"
+[image_t5s2]: ./writeup_screenshots/solidYellowLeft_s2.jpg "solidYellowLeft: Canny edges"
+[image_t5s3]: ./writeup_screenshots/solidYellowLeft_s3.jpg "solidYellowLeft: raw left/right Hough lines"
+[image_t5s4]: ./writeup_screenshots/solidYellowLeft_s4.jpg "solidYellowLeft: overlaid final detected lanes"
 
-[image_t5s0]: ./test_images_output/solidYellowLeft_s0.jpg "solidYellowLeft: original"
-[image_t5s1]: ./test_images_output/solidYellowLeft_s1.jpg "solidYellowLeft: gray + enhanced yellow/white lanes"
-[image_t5s2]: ./test_images_output/solidYellowLeft_s2.jpg "solidYellowLeft: Canny edges"
-[image_t5s3]: ./test_images_output/solidYellowLeft_s3.jpg "solidYellowLeft: raw left/right Hough lines"
-[image_t5s4]: ./test_images_output/solidYellowLeft_s4.jpg "solidYellowLeft: overlaid final detected lanes"
-
-[image_c1]: ./test_videos_output/challenge_ex1.jpg "challenge: hough line misdetection"
-[image_c2]: ./test_videos_output/challenge_ex2.jpg "challenge: no bump marker detection"
+[image_c1]: ./writeup_screenshots/challenge_ex1.jpg "challenge: hough line misdetection"
+[image_c2]: ./writeup_screenshots/challenge_ex2.jpg "challenge: no bump marker detection"
 
 
 ## My Pipeline
