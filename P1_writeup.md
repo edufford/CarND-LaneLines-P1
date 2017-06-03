@@ -1,6 +1,7 @@
 # **Finding Lane Lines on the Road**
 
 **Udacity Self Driving Car Nanodegree - Project #1**
+
 Effendi Dufford
 2017/6/1
 
@@ -53,12 +54,15 @@ My pipeline consists of 4 steps:
 #### Step 1 - Filter and enhance image by lane color
 
 **Function:**
+
 image_s1 = filter_lane_color(image)
 
 **Inputs:**
+
 "image" = Original image of road
 
 **Outputs:**
+
 "image_s1" = Image of road converted to grayscale with enhanced yellow/white areas
 
 **Explanation:**
@@ -77,12 +81,15 @@ After making yellow and white color masks, they are combined to a single mask.  
 #### Step 2 - Canny edge detection with Gaussian blur and region mask
 
 **Function:**
+
 image_s2 = detect_lane_edges(image_s1)
 
 **Inputs:**
+
 "image_s1" = Image of road converted to grayscale with enhanced yellow/white areas
 
 **Outputs:**
+
 "image_s2" = Blank image of detected edges
 
 **Explanation:**
@@ -101,13 +108,16 @@ A fixed trapezoidal region mask is applied to the blank image of detected edges 
 #### Step 3 - Raw line detection by Hough transform and classify left/right by angle
 
 **Function:**
+
 (image_s3, left_lines, right_lines) = detect_lane_lines(image_s2, image)
 
 **Inputs:**
+
 "image_s2" = Blank image of detected edges
 "image" = Original image of road 
 
 **Outputs:**
+
 "image_s3" = Image of road with drawn raw left/right lines
 "left_lines" = List of left line endpoint coordinates
 "right_lines" = List of right line endpoint coordinates
@@ -142,14 +152,17 @@ The raw lines are then sorted into left/right groups by checking their angle and
 #### Step 4 - Set left/right lanes by weighted linear polyfit of raw lines
 
 **Function:**
+
 image_s4 = set_lanes(left_lines, right_lines, image_s3)
 
 **Inputs:**
+
 "image_s3" = Image of road with drawn raw left/right lines
 "left_lines" = List of left line endpoint coordinates
 "right_lines" = List of right line endpoint coordinates
 
 **Outputs:**
+
 "image_s4" = Image of road with overlaid left/right lanes
 
 **Explanation:**
