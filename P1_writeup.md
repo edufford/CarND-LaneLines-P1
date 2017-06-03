@@ -114,12 +114,15 @@ A fixed trapezoidal region mask is applied to the blank image of detected edges 
 **Inputs:**
 
 "image_s2" = Blank image of detected edges
+
 "image" = Original image of road 
 
 **Outputs:**
 
 "image_s3" = Image of road with drawn raw left/right lines
+
 "left_lines" = List of left line endpoint coordinates
+
 "right_lines" = List of right line endpoint coordinates
 
 **Explanation:**
@@ -158,7 +161,9 @@ image_s4 = set_lanes(left_lines, right_lines, image_s3)
 **Inputs:**
 
 "image_s3" = Image of road with drawn raw left/right lines
+
 "left_lines" = List of left line endpoint coordinates
+
 "right_lines" = List of right line endpoint coordinates
 
 **Outputs:**
