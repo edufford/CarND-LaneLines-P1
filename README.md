@@ -8,6 +8,8 @@
 
 This project detects lane lines in images by applying color/region masks, Canny edge detection, Hough transform for determining lines, and setting the left/right lanes by a weighted linear polyfit.  The raw left/right lines and the final detected left/right lanes are overlaid on the original image as the output.
 
+My **project results** are shown in the [project writeup](./P1_writeup.md) and [output videos](./test_videos_output/).
+
 ## Files
 
 **P1.ipynb** - IPython Jupyter notebook that contains the algorithm code
